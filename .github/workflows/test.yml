@@ -1,3 +1,10 @@
-name: Release
+name: test
 
 on: push
+
+jobs:
+  pwd:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ls
+      - run: pwd
